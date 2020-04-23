@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "name": "recommendations-repo",
+  "version": "0.0.1",
+  "description": "A standalone project meant to live in it's own repo and be owned by an autonomous team.",
+  "main": "index.js",
+  "author": "Jacob Ebey",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack"
+  },
+  "dependencies": {
+    "@apollo/federation": "^0.14.1",
+    "apollo-server": "^2.12.0",
+    "apollo-server-micro": "^2.12.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "babel-loader": "^8.1.0",
+    "webpack": "git://github.com/webpack/webpack.git#dev-1",
+    "webpack-cli": "^3.3.11",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
