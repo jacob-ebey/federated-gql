@@ -1,7 +1,7 @@
 import { ApolloServer } from 'apollo-server'
 
 // import { initializeFederatedImports } from './federated-imports'
-import { createFederatedGateway } from './FederatedGateway'
+import { createFederatedGateway } from './federated-gateway'
 
 async function entry () {
   // await initializeFederatedImports({
