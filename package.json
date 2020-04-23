@@ -10,7 +10,8 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "wsrun build"
+    "build": "wsrun build",
+    "start": "node ./packages/gateway-repo/public/main.js"
   },
   "devDependencies": {
     "wsrun": "^5.2.0"
