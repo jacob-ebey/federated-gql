@@ -18,15 +18,15 @@ async function entry () {
       {
         name: 'gql_pdp',
         schema: (await import('gql_pdp/schema')).default
+      },
+      {
+        name: 'gql_products',
+        schema: (await import('gql_products/schema')).default
+      },
+      {
+        name: 'gql_recommendations',
+        schema: (await import('gql_recommendations/schema')).default
       }
-      // {
-      //   name: 'gql_products',
-      //   schema: (await import('gql_products/schema')).default
-      // },
-      // {
-      //   name: 'gql_recommendations',
-      //   schema: (await import('gql_recommendations/schema')).default
-      // }
     ],
     __exposeQueryPlanExperimental: true
   })
