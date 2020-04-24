@@ -11,6 +11,8 @@
   ],
   "scripts": {
     "build": "wsrun build",
+    "deploy": "wsrun deploy",
+    "setup:aws": "wsrun setup:aws",
     "start": "node ./packages/gateway-repo/public/main.js"
   },
   "devDependencies": {

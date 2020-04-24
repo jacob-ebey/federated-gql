@@ -7,7 +7,9 @@
   "author": "Jacob Ebey",
   "license": "MIT",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "deploy": "aws --endpoint-url=http://localhost:4572 s3 cp ./public s3://federated-gql-pdp/ --recursive",
+    "setup:aws": "aws --endpoint-url=http://localhost:4572 s3 mb s3://federated-gql-pdp && aws --endpoint-url=http://localhost:4572 s3api put-bucket-acl --bucket federated-gql-pdp --acl public-read"
   },
   "dependencies": {
     "@apollo/federation": "^0.14.1",
@@ -17,7 +19,7 @@
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "babel-loader": "^8.1.0",
-    "webpack": "git://github.com/webpack/webpack.git#dev-1",
+    "webpack": "git://github.com/jacob-ebey/webpack.git#dev-1",
     "webpack-cli": "^3.3.11",
     "webpack-node-externals": "^1.7.2"
   }

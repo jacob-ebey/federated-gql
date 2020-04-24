@@ -26,7 +26,8 @@ module.exports = {
     rules: [
       {
         test: /\.m?js$/,
-        loader: require.resolve('babel-loader')
+        loader: require.resolve('babel-loader'),
+        exclude: /node_modules/
       }
     ]
   },
@@ -36,7 +37,7 @@ module.exports = {
       library: { type: 'commonjs2' },
       filename: 'remoteEntry.js',
       remotes: {
-        gql_pdp: path.resolve('../pdp-repo/public/remoteEntry.js'),
+        gql_pdp: 'gql_pdp/remoteEntry.js',
         gql_products: path.resolve('../products-repo/public/remoteEntry.js'),
         gql_recommendations: path.resolve('../recommendations-repo/public/remoteEntry.js')
       },
