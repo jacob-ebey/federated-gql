@@ -7,7 +7,9 @@
   "author": "Jacob Ebey",
   "license": "MIT",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "deploy": "echo noop",
+    "setup:aws": "echo noop"
   },
   "dependencies": {
     "@apollo/federation": "^0.14.1",
@@ -15,13 +17,15 @@
     "@babel/polyfill": "^7.8.7",
     "apollo-server": "^2.12.0",
     "apollo-server-micro": "^2.12.0",
+    "aws-sdk": "^2.662.0",
+    "fs-extra": "^9.0.0",
     "node-fetch": "^2.6.0",
     "webpack-dependency-stats": "^0.0.3"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "babel-loader": "^8.1.0",
-    "webpack": "git://github.com/webpack/webpack.git#dev-1",
+    "webpack": "git://github.com/jacob-ebey/webpack.git#dev-1",
     "webpack-cli": "^3.3.11",
     "webpack-node-externals": "^1.7.2"
   }

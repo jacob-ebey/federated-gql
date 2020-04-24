@@ -5,8 +5,11 @@ An example of using Webpack 5 Module Federation to orchestrate an Apollo Federat
 ## Getting started
 
 ```shell
+> docker-compose up -d
 > yarn
+> yarn setup:aws
 > yarn build
+> yarn deploy
 > yarn start
 ```
 

@@ -24,13 +24,14 @@ module.exports = {
     rules: [
       {
         test: /\.m?js$/,
-        loader: require.resolve('babel-loader')
+        loader: require.resolve('babel-loader'),
+        exclude: /node_modules/
       }
     ]
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: 'gql_products',
+      name: 'gql_pdp',
       library: { type: 'commonjs2' },
       filename: 'remoteEntry.js',
       exposes: {

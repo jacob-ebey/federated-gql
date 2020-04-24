@@ -1,3 +1,4 @@
+.localstack/
 node_modules/
 public/
 .DS_STORE
