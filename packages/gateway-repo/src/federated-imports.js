@@ -111,29 +111,7 @@ export async function initializeFederatedImports ({ federatedModules }) {
         appendPaths: ['/']
       })
 
-      console.log(__webpack_require__.c)
+      // TODO: Add to webpack runtime
     }
-
-    //   const manifestObject = await s3Client
-    //     .getObject({ Bucket: federatedModule.bucketName, Key: 'manifest.json' })
-    //     .promise()
-
-    //   const manifest = JSON.parse(manifestObject.Body.toString())
-
-    //   for (const key in manifest) {
-    //     if (key === 'main.js' || key.substr(key.length - 4) === '.map') {
-    //       continue
-    //     }
-
-    //     const chunkObject = await s3Client
-    //       .getObject({ Bucket: federatedModule.bucketName, Key: manifest[key] })
-    //       .promise()
-
-    //     const streamedModule = chunkObject.Body.toString()
-    //     const streamedFilePath = path.join(process.cwd(), federatedModule.name, key)
-    //     requireFromString(streamedModule, streamedFilePath, {
-    //       appendPaths: ['/']
-    //     })
-    //   }
   }
 }
