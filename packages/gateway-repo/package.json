@@ -14,7 +14,7 @@
     "@apollo/gateway": "^0.14.1",
     "@babel/polyfill": "^7.8.7",
     "apollo-server": "^2.12.0",
-    "apollo-server-micro": "^2.12.0",
+    "apollo-server-micro": "^2.14.2",
     "node-fetch": "^2.6.0",
     "webpack-dependency-stats": "^0.0.3"
   },
