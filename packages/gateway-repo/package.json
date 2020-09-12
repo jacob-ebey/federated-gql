@@ -15,7 +15,7 @@
     "@babel/polyfill": "^7.8.7",
     "apollo-server": "^2.12.0",
     "apollo-server-micro": "^2.12.0",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "webpack-dependency-stats": "^0.0.3"
   },
   "devDependencies": {
